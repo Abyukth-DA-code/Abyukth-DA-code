@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Company Growth Analysis</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <h1>WELCOME TO MY ANALYSIS WEB PAGE
+     </h1>
+    <div class="navbar">
+        <button class="nav-btn" onclick="showSection('home')">Home</button>
+        <button class="nav-btn" onclick="showSection('analysis')">Company Analysis</button>
+        <button class="nav-btn" onclick="showSection('forecasts')">Forecasts</button>
+        <button class="nav-btn" onclick="showSection('contact')">Contact</button>
+        
+    </div>
+    
+
+    <!-- Home Section -->
+    <div id="home" class="section">
+        <h1>Welcome to Indian Company Growth Analysis</h1>
+        <p>Track and analyze India's leading companies with interactive charts & AI-powered insights.</p>
+        <img style="align-items:center" src="sample2.jpg" alt="Company Image" class="responsive-image">
+    </div>
+    
+
+    <!-- Company Analysis Section -->
+    <div id="analysis" class="section" style="display: none;">
+        <h1>Company Growth Analysis</h1>
+        <input type="text" id="searchBoxAnalysis" placeholder="Search for a company">
+        <button id="themeToggleAnalysis">Toggle Theme</button>
+        <canvas id="growthChart"></canvas>
+    </div>
+
+    <!-- Future Growth Predictions Section -->
+<div id="forecasts" class="section" style="display: none;">
+    <h1>Future Growth Predictions</h1>
+    <p>Analyze AI-driven forecasts to understand industry trends.</p>
+    <input type="text" id="searchBoxAnalysis1" placeholder="Search for a company">
+        <button id="themeToggleAnalysis1">Toggle Theme</button>
+    <!-- Prediction Chart -->
+    <canvas id="growthPredictionChart"></canvas>
+</div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section" style="display: none;">
+        <h1>Contact Us</h1>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
